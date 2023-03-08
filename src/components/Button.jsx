@@ -1,8 +1,7 @@
 import React from "react";
 
 function Button(props) {
-  let buttonStyle = { backgroundColor: props.color };
-  return <button style={buttonStyle}>{props.text}</button>;
+  return <button>{props.children}</button>;
 }
 
 export default Button;
