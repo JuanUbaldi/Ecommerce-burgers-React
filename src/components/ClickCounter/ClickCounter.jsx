@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-
-function ClickCounter(props) {
+import Button from "../Button";
+import "./clickCounter.css";
+function ClickCounter({ stock, onAddToCart }) {
   const [amount, setAmount] = useState(1);
 
   function sumar() {
-    if (amount < props.stock) {
+    if (amount < stock) {
       setAmount(amount + 1);
     }
   }
@@ -16,13 +17,23 @@ function ClickCounter(props) {
 
   return (
     <div>
-      <button onClick={sumar} color="blue">
+      <Button onClick={sumar} color="orange">
         +
-      </button>
+      </Button>
       <h2>La cantidad de productos que agregaste es: {amount}</h2>
-      <button onClick={restar} color="red">
+      <Button onClick={restar} color="orange">
         -
-      </button>
+      </Button>
+      <div className="bottomClickCounter">
+        <Button
+          color="black"
+          colorLetter="yellow"
+          colorBorder="yellow"
+          onClick={() => onAddToCart(amount)}
+        >
+          Agregar al carrito
+        </Button>
+      </div>
     </div>
   );
 }

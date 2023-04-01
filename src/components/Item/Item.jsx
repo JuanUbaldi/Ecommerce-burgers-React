@@ -12,11 +12,16 @@ function Item({ product }) {
       <img className="card-img" src={product.imgFlag} alt="bandera" />
 
       <div className="card-detail">
+        <h2>{product.name}</h2>
         <p>{product.description}</p>
         <img src={product.imgBurger} alt="hamburguesa" />
         <h4>{product.price}</h4>
+      </div>
+      <div className="buttonItem">
         <Link to={urlDetail}>
-          <Button>IR AL DETALLE</Button>
+          <Button color="black" colorLetter="yellow" colorBorder="yellow">
+            IR AL DETALLE
+          </Button>
         </Link>
       </div>
     </div>

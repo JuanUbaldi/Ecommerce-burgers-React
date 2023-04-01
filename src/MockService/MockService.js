@@ -76,17 +76,6 @@ const itemsDB = [
     price: 330,
     stock: 55,
   },
-  /*  {
-    id: 8,
-    imgFlag: "/img/venezuela.png",
-    name: "punto veneco veggie",
-    imgBurger: "/img/arepaVegana.jpg",
-    description:
-      "Super arepa rellena de una cantidad increible verduritas y mucha, mucha palta",
-    category: "arepas",
-    price: 430,
-    stock: 75,
-  }, */
   {
     id: 8,
     imgFlag: "/img/peru.png",
@@ -386,12 +375,14 @@ export function getItemFromAPI(idParams) {
   }, 500);
 }
 export function getItemFromAPIByCategory(categoryId) {
-  return new Promise((resolve, ) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      let itemsRequested = itemsDB.filter((item) => item.category === categoryId);
+      let itemsRequested = itemsDB.filter(
+        (item) => item.category === categoryId
+      );
       if (itemsRequested) {
         resolve(itemsRequested);
-      } 
+      }
     });
   }, 500);
 }

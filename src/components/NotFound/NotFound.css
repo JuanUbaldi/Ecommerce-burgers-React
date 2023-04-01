@@ -1,0 +1,15 @@
+.NotFound {
+  background-color: rgb(182, 53, 39);
+}
+.imgNotFound {
+  width: "700px";
+  height: "600px";
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+  .imgNotFound {
+    width: 200px;
+    height: 200px;
+    margin: auto auto;
+  }
+}

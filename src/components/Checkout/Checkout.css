@@ -1,0 +1,20 @@
+.checkout {
+  background-color: rgb(235, 93, 5);
+}
+
+.imgCheckout {
+  width: 600px;
+  height: 500px;
+}
+
+.buttonCheckout {
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+@media screen and (max-width:600px) and (min-width: 0px) {
+  .imgCheckout {
+    width: 200px;
+    height: 200px;
+  }
+}

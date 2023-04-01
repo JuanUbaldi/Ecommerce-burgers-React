@@ -1,0 +1,49 @@
+.cartView {
+  margin: 150px 10px;
+  border: yellow 2px solid;
+  color: yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartDetail,
+.carritoVacio,
+.carritoLleno,
+.totalPrice {
+  color: yellow;
+}
+
+.volverACatalogo,
+.limpiarCarrito,
+.createOrder .buyForm {
+  margin: 40px;
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+  .carritoLleno {
+    text-align: center;
+  }
+  .cartView {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartDetail {
+    margin: auto, auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .volverACatalogo,
+  .eliminarCarrito,
+  .limpiarCarrito,
+  .buyForm {
+    margin: auto auto;
+    padding: 20px;
+  }
+  .totalPrice {
+    text-align: center;
+  }
+}

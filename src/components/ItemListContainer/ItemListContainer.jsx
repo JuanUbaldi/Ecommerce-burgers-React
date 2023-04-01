@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./ItemListContainer.css";
 import ItemList from "./ItemList";
-import getItemsFromAPI, {
-  getItemFromAPIByCategory,
-} from "../../MockService/MockService";
+import getItemsFromAPI, 
+ {  getItemFromAPIByCategory,
+} from "../../service/firebase";
 import { useParams } from "react-router-dom";
 function ItemListContainer() {
   let [productsList, setProductsList] = useState([]);
   const { categoryId } = useParams();
- 
+
   useEffect(() => {
     if (categoryId) {
       getItemFromAPIByCategory(categoryId).then((itemsDB) => {

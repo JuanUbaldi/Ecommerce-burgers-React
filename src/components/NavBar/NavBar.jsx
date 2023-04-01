@@ -1,11 +1,16 @@
 import React from "react";
-import CartWidget from "./CartWidget.jsx/CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
+import "./NavBar.css";
 function NavBar() {
   return (
-    <>
-      <h3>Mi tienda</h3>
-      <ul>
+    <div className="navBar">
+      <div className="navBarTitulo">
+        <img className="navBarImg" src="/img/brujula.png" alt="foto" />
+        <h1>Punto Hamburguesa</h1>
+        <CartWidget />
+      </div>
+      <ul className="navBarList">
         <li>
           <Link to="/">Mi Tienda </Link>
         </li>
@@ -37,8 +42,7 @@ function NavBar() {
           <Link to="/category/arepas">Arepas</Link>
         </li>
       </ul>
-      <CartWidget />
-    </>
+    </div>
   );
 }
 

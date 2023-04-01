@@ -1,0 +1,19 @@
+.banner {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: yellow;
+}
+.imgbanner {
+  width: 400px;
+  height: 300px;
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+  .imgbanner {
+    width: 170px;
+    height: 170px;
+  }
+}
