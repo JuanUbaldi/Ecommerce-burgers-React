@@ -1,0 +1,55 @@
+.home {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeH1 {
+  font-size: 70px;
+  color: yellow;
+}
+
+.homeH2 {
+  font-size: 50px;
+  color: yellow;
+}
+.homeRelative {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.homeImg {
+  width: 950px;
+  height: 500px;
+}
+.homeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeText:hover {
+  border: solid 1px yellow;
+  box-shadow: 0 6px 6px yellow;
+}
+.buttonHome {
+  background-color: yellow;
+  border-radius: 8px;
+  color: black;
+  height: 70px;
+  width: 190px;
+  font-size: 20px;
+}
+.buttonHome:hover {
+  background-color: black;
+  color: yellow;
+  border: yellow 1px solid;
+}
+
+.homeH3 {
+  font-size: 30px;
+  color: yellow;
+}

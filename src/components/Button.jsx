@@ -8,6 +8,7 @@ function Button(props) {
     borderColor: props.colorBorder,
     color: props.colorLetter,
     paddingButton: props.paddingButton,
+    borderRadius: "5px",
   };
   return (
     <button onClick={props.onClick} style={buttonStyle}>
